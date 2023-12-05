@@ -27,6 +27,7 @@
 		26FC184E2B1EFA1400CC1BC5 /* ReducePerfComparison.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReducePerfComparison.h; sourceTree = "<group>"; };
 		26FC18532B1EFA1400CC1BC5 /* ReducePerfComparisonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReducePerfComparisonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26FC18582B1EFA1400CC1BC5 /* ReducePerfComparisonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReducePerfComparisonTests.swift; sourceTree = "<group>"; };
+		26FC18632B1FA1AD00CC1BC5 /* Build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Build.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +52,7 @@
 		26FC18412B1EFA1400CC1BC5 = {
 			isa = PBXGroup;
 			children = (
+				26FC18632B1FA1AD00CC1BC5 /* Build.xcconfig */,
 				26FC184D2B1EFA1400CC1BC5 /* ReducePerfComparison */,
 				26FC18572B1EFA1400CC1BC5 /* ReducePerfComparisonTests */,
 				26FC184C2B1EFA1400CC1BC5 /* Products */,
@@ -215,6 +217,7 @@
 /* Begin XCBuildConfiguration section */
 		26FC185B2B1EFA1400CC1BC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26FC18632B1FA1AD00CC1BC5 /* Build.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -273,7 +276,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -281,6 +283,7 @@
 		};
 		26FC185C2B1EFA1400CC1BC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26FC18632B1FA1AD00CC1BC5 /* Build.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
